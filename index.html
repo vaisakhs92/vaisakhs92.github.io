@@ -23,13 +23,20 @@
     <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"/>
 
     <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-
+    <link rel="stylesheet" href="octicons.min.css">
+    <link rel="stylesheet" href="github-activity-0.1.4.min.css">
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
 
 </head>
+<style>
 
+  #feed {
+
+    height: 600px;
+    margin: 30px 0;
+  }
+</style>
 <body>
     <!-- ******HEADER****** -->
     <header class="header">
@@ -67,20 +74,20 @@
                         <h2 class="heading">Latest Projects</h2>
                         <div class="content">
 
-                            <div class="item featured text-center">
-                                <h3 class="title"><a href="https://github.com/vaisakhs92/Dynamic-Web-Application" target="_blank">Dynamic web application with Sunlight Congress API</a></h3>
-                                <p class="summary">Used a multitude of web-based technologies including PHP, AJAX, JSON, XML to create a web application that retrieves data from Sunlight Congress API.
-Implemented a servlet that retrieve XML information from Amazon AWS Server, parsed to JSON and feed it to the web application.</p>
-                                <div class="featured-image">
-                                    <a href="https://github.com/vaisakhs92/Dynamic-Web-Application" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/projectfeatured.png" alt="project name" />
-                                    </a>
-                                    <div class="ribbon">
-                                        <div class="text">New</div>
-                                        </div>
-                                    </div>
+
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/vaisakhs92/Dynamic-Web-Application" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/projectfeatured.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/vaisakhs92/Dynamic-Web-Application" target="_blank">Dynamic web application with Sunlight Congress API</a></h3>
+                                    <p>Used a multitude of web-based technologies including PHP, AJAX, JSON, XML to create a web application that retrieves data from Sunlight Congress API.
+    Implemented a servlet that retrieve XML information from Amazon AWS Server, parsed to JSON and feed it to the web application.</p>
+                                    <p><a class="more-link" href="https://github.com/vaisakhs92/Dynamic-Web-Application" target="_blank"><i class="fa fa-external-link"></i>Go to Github</a></p>
+                                </div><!--//desc-->
                             </div><!--//item-->
-                            <hr class="divider" />
+
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/vaisakhs92/Congress-Search-Android-App" target="_blank">
                                 <img class="img-responsive project-image" src="assets/images/projects/project-1.png" alt="project name" />
@@ -99,14 +106,15 @@ Implemented a servlet that retrieve XML information from Amazon AWS Server, pars
                                 <img class="img-responsive project-image" src="assets/images/projects/project-3.png" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a href="#" target="_blank">Android Application for shortest path</a></h3>
-                                    <p>Uses Google Maps and Google Directions Api to find the shortest path from point A to point B and the time taken to cover it.</p>
+                                    <h3 class="title"><a href="#" target="_blank">Android Application for cheapest fare</a></h3>
+                                    <p>Uses Google Maps and Google Directions Api to find the cheapest way to get from point A to point B and the time taken to cover it.</p>
                                     <p><a class="more-link" href="https://github.com/vaisakhs92/Travel-App" target="_blank"><i class="fa fa-external-link"></i> Go to Github</a></p>
                                 </div><!--//desc-->
                             </div><!--//item-->
+
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" href="#" target="_blank">
-                                <img class="img-responsive project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                <img class="img-responsive project-image" src="assets/images/projects/dla.jpg" alt="project name" />
                                 </a>
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a href="#" target="_blank">Digital Life Assistant</a></h3>
@@ -139,6 +147,9 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                     </div><!--//section-inner-->
                 </section><!--//section-->
 
+
+
+
             </div><!--//primary-->
             <div class="secondary col-md-4 col-sm-12 col-xs-12">
 
@@ -151,7 +162,7 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                             <div class="skillset">
 
                                 <div class="item">
-                                    <h3 class="level-title">Java &amp; C++<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="You can use the tooltip to add more info...">Expert</span></h3>
+                                    <h3 class="level-title">Java <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" >Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>
@@ -159,7 +170,7 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">Javascript &amp; AngularJS<span class="level-label">Pro</span></h3>
+                                    <h3 class="level-title">C++  &amp; C <span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" >Pro</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="80%">
                                         </div>
@@ -167,7 +178,32 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                                 </div><!--//item-->
 
                                 <div class="item">
-                                    <h3 class="level-title">HTML5, CSS3 &amp; SASS<span class="level-label">Expert</span></h3>
+                                    <h3 class="level-title">Javascript<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+
+                                <div class="item">
+                                    <h3 class="level-title">JQuery &amp; AngularJS<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML5 &amp; CSS3<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="96%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">JSON &amp; XML<span class="level-label">Expert</span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="96%">
                                         </div>
@@ -191,6 +227,8 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                                 </div><!--//item-->
 
 
+
+
                             </div>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -204,11 +242,12 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                         <div class="content">
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> University of Southern California</h3>
+
                                 <h4 class="university">Master of Science in Computer Science <span class="year">(2016-2018)</span></h4>
                             </div><!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i>Cochin University</h3>
-                                <h4 class="university">Bachelor of Technology in Computer Science, 76% <span class="year">(2010-2014)</span></h4>
+                                <h4 class="university">Bachelor of Technology in Computer Science<span class="year">(2010-2014)</span></h4>
                             </div><!--//item-->
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -221,6 +260,7 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                             <ul class="list-unstyled">
                                 <li>Analysis of Algorithms</li>
                                 <li>Web Technologies</li>
+                                <li>Multimedia Systems Design</li>
                                 <li>Database Management</li>
                                 <li>Information Retrieval</li>
                             </ul>
@@ -232,7 +272,7 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
 
                 <aside class="info aside section">
                    <div class="section-inner">
-                       <h2 class="heading sr-only">Basic Information</h2>
+                       <h2 class="heading">Basic Information</h2>
                        <div class="content">
                            <ul class="list-unstyled">
                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Los Angeles, US</li>
@@ -242,6 +282,8 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
                        </div><!--//content-->
                    </div><!--//section-inner-->
                </aside><!--//aside-->
+
+
 
 
 
@@ -263,7 +305,8 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
     </footer><!--//footer-->
 
     <!-- Javascript -->
-
+    <script type="text/javascript" src="mustache.min.js"></script>
+    <script type="text/javascript" src="github-activity-0.1.4.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
@@ -272,6 +315,13 @@ Successfully rendered various JSON data sets on WebGL based 3d Globes.</p>
     <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
     <!-- custom js -->
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+    GitHubActivity.feed({
+    username: "vaisakhs92", // optional
+    selector: "#feed",
+    limit: 20 // optional
+});
+    </script>
 
 </body>
 </html>
